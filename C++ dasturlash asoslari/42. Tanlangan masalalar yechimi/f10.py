@@ -4,7 +4,7 @@ def f10(a, b):
     list_b = stka(b)
     ia = 0
     ib = 0
-    list3 =[]
+    list3 = []
     for i in list_a[::2]:
         e1 = i
         for j in list_b[::2]:
@@ -13,14 +13,21 @@ def f10(a, b):
                 f = min(list_a[(ia + 1)], list_b[(ib + 1)])
                 list3.append(e1)
                 list3.append(f)
-                ib += 2
+                ib = 0
                 break
-            elif e1 > e2:
-                ib += 2
+            elif e1 < e2:
+                ib = 0
                 break
             else:
                 ib += 2
         ia += 2
-    return list3
+    a3 = 1
+    ki = 0
+    for k in list3[::2]:
+        a1 = k ** list3[(ki + 1)]
+        ki += 2
+        a3 *= a1
+    return a3
 
-print(f10(18, 24))
+
+print(f10(32, 24))
