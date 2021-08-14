@@ -28,6 +28,3 @@ def f10(a, b):
         ki += 2
         a3 *= a1
     return a3
-
-
-print(f10(32, 24))
