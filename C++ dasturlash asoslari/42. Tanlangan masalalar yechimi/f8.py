@@ -21,6 +21,7 @@ information about the algorithm:
         1-qo'shimcha shart: 0 < p <= 12
 
 solution:
+
 """
 
 def f8(b, p: float):
