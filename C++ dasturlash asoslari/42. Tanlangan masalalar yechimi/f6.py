@@ -1,3 +1,12 @@
+"""
+author:  Shodmonov Zafar
+date and time:  09:00  14.08.2021
+
+information about the algorithm:
+  InPut:  n
+  OutPut:  prime numbers up to n
+"""
+
 def prime_numbers(n):
     output_list = [2]
     for num in range(3, n+1, 2):
@@ -11,4 +20,3 @@ def prime_numbers(n):
         if len(does_not_divide) == num - 2:
             output_list.append(num)
     return output_list
-
